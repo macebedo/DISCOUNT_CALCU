@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	text-align: left;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #000000;
+	text-shadow: 1px 1px 1px #999;
+	background-color: #FFC;
+	float: left;
+	width: 650px;
+	border-style: ridge;
+	transform: matrix;
+	
+}

@@ -1,0 +1,40 @@
+<!DOC html>
+<head>
+<title>Assignment 7</title>
+<link rel="stylesheet" type="text/css" href="style-L7.css" />
+<script type="text/javascript" src="calculate-L7.js"></script>
+</head>
+<body>
+<h1>Assignment 7</h1>
+<table class="form">
+    
+<form type="submit" action="" method="post" enctype="multipart/form-data" name="wigetCalc">
+   <tr><td>First Name: </td><td><input name="userfirst" id="userfirst" type="text" size="20" maxlngth="20" onblur="validateFirst()" />
+       &nbsp;&nbsp;<span id="firstprompt"></span></td></tr>
+    
+    <tr><td>Last Name: </td><td><input name="userlast" id="userlast" type="text" size="20" maxlength="30" onblur="validateLast()" />
+        &nbsp;&nbsp;<span id="lastprompt"></span></td></tr>
+    
+    <tr><td>Phone Number: </td><td><input name="phonenumber" id="phonenumber" type="text" size="20" maxlength="20" onblur="validatePhone()" />&nbsp;-&nbsp;<span id="phoneprompt">(XXX)-XXX-XXXX</span></td></tr>
+    
+    <tr><td>Qty: </td><td><input name="quantity" id="quantity" type="text" size="20" maxlength="20" onblur="validateQuantity()" />
+        &nbsp;&nbsp;<span id="quantityprompt">Enter 1-99</span></td></tr>
+    
+    <tr><td>Widget Price: </td><td><input name="widgetprice" id="widgetprice" type="text" size="20" maxlength="20" readonly value="$4.95" />&nbsp;&nbsp;<span id="widgetpriceprompt">Widget Price</span></td></tr>
+  
+    </table>
+ <!--   <tr><td> -->
+        <p id="button" name="button"><span span style="background-color:#87CEEB" onclick="calculate()"> Calculate </span></p>
+    <p id="msg">==== TOTAL ====</p>          
+    <p id="tname">Name: </p>
+    <p id="tphone">Phone #: </p>
+    <p id="tqty">Quantity:</p>
+    <p id="tdiscount">Discount:</p>
+    <p id="tsalestax">Sale Tax Charged (8.5%):</p>
+    <p id="ttotalcost">Total Cost:</p>
+        <!-- </td></tr> -->
+     <p id="button1" name="button"><button onclick="clear()"> Clear </button></p>
+</form>
+ 
+ </body>
+</html>
